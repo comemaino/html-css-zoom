@@ -11,16 +11,13 @@ body {
     color: #ffffff;
 }
 
-/* HEADER */
 
+/* HEADER */
 header {
     padding: .2rem;
     height: 4rem;
     text-align: right;
     background-color: #000000;
-
-/* DEBUG */
-    border: 1px solid red;
 }
 
 .header-btn {
@@ -28,19 +25,17 @@ header {
     padding: .4em .6em;
     border-radius: .4em;
     background-color: #585858;
-
 }
 
-/* MAIN */
 
+/* MAIN */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    overflow-y: auto;
     height: calc(100vh - 10rem);
     background-color: #000000;
+    overflow-y: auto;
 }
 
 .user {
@@ -48,7 +43,6 @@ main {
     margin: .5rem .25rem;
     width: 16rem;
     height: 9rem;
-
     background-image: url(https://picsum.photos/320/180);
 }
 
@@ -57,20 +51,56 @@ main {
     left: 0;
     bottom: 0;
     padding: .5em;
-    background-color: #00000050;
+    line-height: 1rem;
+    vertical-align: middle;
+    background-color: #00000062;
 }
 
 .user-name i {
     font-size: 1.5em;
 }
 
-/* FOOTER */
 
+/* FOOTER */
 footer {
     display: flex;
-    height: 6rem;
+    justify-content: space-between;
+    align-content: flex-start;
+    min-height: 6rem;
     background-color: #292929;
+}
 
-    /* DEBUG */
-    border: 1px solid red;
+.btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0em 1em;
+}
+
+.icon {
+    font-size: 1.6rem;
+    margin-bottom: .25em;
+}
+
+.media-input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fa-circle {
+    color: #ff5656;
+}
+
+.end-btn {
+    padding: 0 2em;
+    text-align: center;
+    line-height: 6rem;
+    color: #ff5656;
+    background-color: #585858;
 }
